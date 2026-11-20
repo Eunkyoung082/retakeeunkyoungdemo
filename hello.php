@@ -6,7 +6,7 @@
     <title>Hello</title>
 </head>
 <body>
-    <form method="post" action="hello.txt">
+    <form method="post" action="<?php echo "htmlspecialchars($_SERVER['PHP_SERVER'])" ?>">
         <input type="text" name="username" id="username" />
         <input type="submit" value="Submit" />
     </form>
